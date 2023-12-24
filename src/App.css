@@ -1,0 +1,375 @@
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.leaf1 {
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: pulse;
+}
+
+.leaf2 {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: swing;
+}
+
+.leaf3 {
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: pulse;
+}
+
+.gingerbread .body {
+  fill: #cd803d;
+}
+
+.gingerbread .eye {
+  fill: white;
+}
+
+.gingerbread .mouth {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.gingerbread .limb {
+  stroke: #cd803d;
+  stroke-width: 35px;
+  stroke-linecap: round;
+}
+
+.gift .box {
+  fill: #d1495b;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.gift .stripe {
+  fill: white;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.gift .ribbon {
+  stroke: #b73a3b;
+  stroke-width: 4px;
+  fill: none;
+}
+
+h2 {
+  animation-duration: 0.6s;
+  animation-delay: 2.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: pulse;
+}
+
+h3 {
+  animation-duration: 2.2s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: tada;
+}
+
+.star {
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: heartBeat;
+}
+
+.candy {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: pulse;
+}
+
+.tree {
+  animation-duration: 1.2s;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: pulse;
+}
+
+.tree2 {
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: pulse;
+}
+
+.sock {
+  animation-duration: 1s;
+  animation-delay: 1.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: tada;
+}
+
+.bell:hover {
+  transform-origin: center 30%;
+}
+
+.bell,
+.bell .bell-tongue {
+  animation-duration: 0.6s;
+  animation-delay: 1.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: ring;
+}
+
+.bauble {
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.22,.68,0,1.71);
+  animation-name: bauble;
+}
+
+.ribbon {
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: swing;
+}
+
+.gift {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: shakeY;
+}
+
+.snowman {
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: swing;
+}
+
+.flake {
+  animation-duration: inherit;
+  animation-name: snowing;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes snowing {
+  from {
+    transform: translate(0, -100px);
+  }
+  to {
+    transform: translate(0, 100px);
+  }
+}
+
+.flake.opaque {
+  opacity: 0.7;
+}
+
+.flake.slow {
+  animation-duration: 5s;
+}
+
+.flake.fast {
+  animation-duration: 3s;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.2);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.2);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ring {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes bauble {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes shakeY {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
